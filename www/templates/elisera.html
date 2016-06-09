@@ -1,0 +1,28 @@
+<ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-stable">
+            <ion-nav-back-button></ion-nav-back-button>
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="side-menu21"></ion-nav-view>
+    </ion-side-menu-content>
+    <ion-side-menu side="left" id="side-menu21">
+        <ion-header-bar class="bar-stable">
+            <div class="title">Elisera</div>
+        </ion-header-bar>
+        <ion-content padding="false" class="side-menu-left has-header">
+            <ion-list id="elisera-list1" class=" ">
+                <ion-item class="item-icon-left  " id="elisera-list-item1" ui-sref="elisera.home" menu-close="">
+                    <i class="icon ion-android-home"></i>Home</ion-item>
+                <ion-item class="item-icon-left  " id="elisera-list-item10" ui-sref="elisera.myRoom" menu-close="">
+                    <i class="icon ion-ios-people"></i>My Room</ion-item>
+                <ion-item class="item-icon-left  " id="elisera-list-item2" ui-sref="elisera.points" menu-close="">
+                    <i class="icon ion-android-star"></i>Points</ion-item>
+                <ion-item class="item-icon-left  " id="elisera-list-item12" ui-sref="elisera.aboutApp" menu-close="">
+                    <i class="icon ion-thumbsup"></i>About Us</ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>

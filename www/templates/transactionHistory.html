@@ -1,0 +1,14 @@
+<ion-view title="Transaction History" id="page4" class=" ">
+    <ion-content padding="true" class="has-header" ng-contoller="transactionHistoryCtrl">
+		<div class="list" ng-repeat="x in TransactionHistory" ng-hide="HideTransactions">
+			<div class="item item-divider">Order #{{ x.PurchaseID }}</div>
+			<div class="item">Cost: ${{ x.Cost }}</div>
+			<div class="item">Start Date: {{ x.StartDate }}</div>
+			<div class="item">End Date: {{ x.EndDate }}</div>
+			<div class="item">Room Number: {{ x.RoomID }}</div>
+		</div><br>
+		<div class="list" ng-hide="HideMessage">
+			<h3 style="color:#000000;" class=" ">No transactions found.</h3>
+		</div><br>
+	</ion-content>
+</ion-view>

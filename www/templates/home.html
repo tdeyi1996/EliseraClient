@@ -1,0 +1,16 @@
+<ion-view title="Home" id="page1" class=" ">
+    <ion-content padding="true" scroll="false" class="has-header" ng-controller="homeCtrl">
+        <div class="list card " id="home-card21">
+            <ion-item class="item-avatar  " id="home-list-item4">
+                <img src="{{ UserPicURL }}">
+                <h2>{{ UserName }}</h2>
+                <p>Wallet ID: {{ UserWalletID }}</p>
+            </ion-item>
+        </div>
+        <a ui-sref="elisera.transactionHistory" id="home-button2" class="button button-dark  button-block">Transaction History</a>
+        <a ui-sref="elisera.reservationHistory" id="home-button1" class="button button-dark  button-block">Reservation History</a>
+        <div class="spacer" style="width: 300px; height: 25%;"></div>
+		<a id="home-button4" class="button button-calm  button-block icon-right ion-ios-book" ng-click="FindEmptyRooms()">Reserve Room</a>
+        <a id="home-button3" class="button button-balanced  button-block icon-right ion-cash" on-touch="ScanRoom()">Purchase Room</a>
+    </ion-content>
+</ion-view>

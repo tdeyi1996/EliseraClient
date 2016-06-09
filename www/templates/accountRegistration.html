@@ -1,0 +1,25 @@
+<ion-view hide-nav-bar="true" hide-back-button="true" title="" id="page11" class=" ">
+    <ion-content padding="true" scroll="false" ng-controller="accountRegistrationCtrl">
+		<h1 style="color:#000000;" class=" ">Account Registraion</h1><br>
+        <ion-list id="accountRegistration-list8" class=" ">
+            <label class="item item-input " id="accountRegistration-input5">
+                <span class="input-label">Full Name:</span>
+                <input type="text" placeholder="Enter your full name" ng-model="FullName" required>
+            </label>
+            <ion-item id="accountRegistration-list-item18" class="  ">Wallet Address: {{ UserWalletID }}</ion-item>
+            <label class="item item-input " id="accountRegistration-input6">
+                <span class="input-label">Email:</span>
+                <input type="email" placeholder="Enter your email" ng-model="Email" required>
+            </label>
+            <label class="item item-input " id="accountRegistration-input7">
+                <span class="input-label">Mobile Number:</span>
+                <input type="tel" placeholder="Enter your mobile no." ng-model="MobileNo" required>
+            </label>
+            <label class="item item-input " id="accountRegistration-input8">
+                <span class="input-label">Picture URL:</span>
+                <input type="text" placeholder="Enter the URL of your DP" ng-model="PictureURL" required>
+            </label><br>
+        </ion-list>
+        <a id="accountRegistration-button14" class=" button button-positive  button-block " ng-click="RegisterAccount()">Register Account</a>
+    </ion-content>
+</ion-view>

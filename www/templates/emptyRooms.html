@@ -1,0 +1,13 @@
+<ion-view title="Empty Rooms" id="page9" class=" ">
+    <ion-content padding="true" class="has-header" ng-contoller="emptyRoomCtrl">
+		<div class="list" ng-repeat="x in EmptyRooms" ng-hide="HideEmptyRooms">
+			<div class="item item-divider">Room #{{ x.RoomID }}</div>
+			<div class="item">Cost: ${{ x.Cost }}</div>
+			<div class="item">Capacity: {{ x.Capacity }}</div>
+			<a class="button button-dark button-block" ng-click="ReserveRoom({{ x.RoomID }})">Reserve</a>
+		</div><br>
+		<div class="list" ng-hide="HideMessage">
+			<h3 style="color:#000000;" class=" ">There are no empty rooms.</h3>
+		</div><br>
+	</ion-content>
+</ion-view>

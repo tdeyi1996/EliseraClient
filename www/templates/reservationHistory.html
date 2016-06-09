@@ -1,0 +1,13 @@
+<ion-view title="Reservation History" id="page5" class=" ">
+    <ion-content padding="true" class="has-header" ng-contoller="reservationHistoryCtrl">
+		<div class="list" ng-repeat="x in ReservationHistory" ng-hide="HideReservations">
+			<div class="item item-divider">Reservation #{{ x.ReservationID }}</div>
+			<div class="item">Room Number: {{ x.RoomID }}</div>
+			<div class="item">Start Date: {{ x.StartDateTime }}</div>
+			<div class="item">End Date: {{ x.EndDateTime }}</div>
+		</div><br><br>
+		<div class="list" ng-hide="HideMessage">
+			<h3 style="color:#000000;" class=" ">No reservations found.</h3>
+		</div><br>		
+	</ion-content>
+</ion-view>

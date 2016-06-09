@@ -1,0 +1,21 @@
+<ion-view title="My Room" id="page6" class=" ">
+    <ion-content padding="true" scroll="false" class="has-header" g-controller="myRoomCtrl">
+        <ion-list id="myRoom-list3" class=" " ng-hide="HideMyRoomElements">
+            <ion-item class="item-icon-left  " id="myRoom-list-item11">
+                <i class="icon ion-home"></i>Room #{{ MyRoomDetails[0].RoomID }}</ion-item>
+            <ion-item id="myRoom-list-item8" class="  ">Start Date: {{ MyRoomDetails[0].StartDate }}</ion-item>
+            <ion-item id="myRoom-list-item9" class="  ">End Date: {{ MyRoomDetails[0].EndDate }}</ion-item>
+        </ion-list>
+		<button id="myRoom-button9" class="button button-positive  button-block" on-touch="ScanRoom()" ng-hide="HideMyRoomElements">Enter Room</button>
+        <button id="myRoom-button4" class="button button-assertive  button-block" ng-click="Checkout()" ng-hide="HideMyRoomElements">Checkout</button>
+        <div class="spacer" style="width: 300px; height: 38px;" ng-hide="HideMyRoomElements"></div>
+        <h3 id="myRoom-heading4" style="color:#000000;text-align:center;" ng-hide="HideMyRoomElements">Room Ownership</h3>
+        <div id="myRoom-button-bar1" class=" button-bar " ng-hide="HideMyRoomElements">
+            <button id="myRoom-button7" class="button button-calm  button-block" ng-hide="HideMyRoomElements" ng-click="NoFunctionality()">Transfer</button>
+            <button id="myRoom-button8" class="button button-royal  button-block" ng-hide="HideMyRoomElements" ng-click="NoFunctionality()">Extend</button>
+        </div>
+		<div class="list" ng-hide="HideMessage">
+			<h3 style="color:#000000;" class=" ">Currently you do not own any room.</h3>
+		</div><br>
+    </ion-content>
+</ion-view>
